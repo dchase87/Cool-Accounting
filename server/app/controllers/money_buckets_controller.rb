@@ -1,0 +1,2 @@
+class MoneyBucketsController < ApplicationController
+end

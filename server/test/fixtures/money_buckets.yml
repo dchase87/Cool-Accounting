@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  category: MyString
+  allotment: 1
+  balance: 1
+  status: MyString
+  month: one
+
+two:
+  category: MyString
+  allotment: 1
+  balance: 1
+  status: MyString
+  month: two
