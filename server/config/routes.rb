@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :transactions
-      resources :money_buckets
-      resources :months
-      resources :users
+      shallow do
+        resources :users do
+          resources :months
+          resources :money_buckets
+          resources :transactions
+        end
+      end
       post '/auth', to: 'auth#create'
       get '/me', to: 'auth#show'
     end
