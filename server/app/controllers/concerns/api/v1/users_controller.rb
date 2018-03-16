@@ -1,4 +1,4 @@
-module API
+module Api
   module V1
     class UsersController < ApplicationController
       before_action :authorize_user!, only: [:show]
