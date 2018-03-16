@@ -36,7 +36,7 @@ class ApplicationController < ActionController::API
   end
 
   def secret
-    'chunkusrosebilly'
+    ENV["AUTH_SECRET"]
   end
 
   def algorithm
