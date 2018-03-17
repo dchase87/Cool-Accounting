@@ -1,7 +1,7 @@
 module Api
   module V1
     class MonthsController < ApplicationController
-      before_action :authorize_user!
+      # before_action :authorize_user!
 
       def show
         render json: Month.find_by(id: params[:id])
