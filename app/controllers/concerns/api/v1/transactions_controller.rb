@@ -1,7 +1,7 @@
 module Api
   module V1
     class TransactionsController < ApplicationController
-      before_action :authorize_user!
+      # before_action :authorize_user!
 
       def index
         render json: Transaction.where(current_user.id = params[:user_id])

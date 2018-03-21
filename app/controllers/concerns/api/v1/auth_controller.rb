@@ -1,7 +1,7 @@
 module Api
   module V1
     class AuthController < ApplicationController
-      before_action :authorize_user!, only: [:show]
+      # before_action :authorize_user!, only: [:show]
 
       def create
         user = User.find_by(email: params[:email])
